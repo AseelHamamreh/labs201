@@ -1,14 +1,19 @@
 'use strict';
 let score =0;
 
+function Question1(){
 let name = prompt('what your name?');
 alert('nice to meet you '+ name);
 score = score +1;
+}Question1();
 
+function Question2(){
 let age = prompt('how old are you?');
 alert(' العمر كله صاحب');
 score = score +1;
+}Question2();
 
+function Question3(){
 let food = prompt('what your favorite food?, mansaf, maqluba, Mandi, Biryani');
 
 if(food.toLowerCase()== 'mansaf'|| food.toLowerCase()== 'maqluba' || food.toLowerCase()== 'Mandi' || food.toLowerCase()== 'Biryani' )
@@ -20,11 +25,13 @@ else
 {
   alert('in all cases, you own me a mansaf')
 }
+} Question3();
 
+function Question4(){
 let time = prompt('what your favorite time for dinner? 3 pm, 5 pm');
 if(time.toLowerCase()=='3 pm')
 {
-  alert('at 3 pm will be better for me, so you owe me a '+food)
+  alert('at 3 pm will be better for me, so you owe me a '+food);
   score = score +1;
 }
 else if(time.toLowerCase()=='5 pm')
@@ -35,9 +42,10 @@ else
 {
   alert('in all cases, you own me a mansaf at any time you want')
 }
-
+} Question4();
 //Q6
 
+function Question4(){
 for (let x = 0; x <= 3; x = x + 1) {
   let myage = prompt('I am Ameen, what do you think about my age?, give me a N');
   if (myage == '24') {
@@ -59,10 +67,11 @@ for (let x = 0; x <= 3; x = x + 1) {
     alert('You have 4 wrong answers, sorry the correct answer is ‏24');
   }
 }
-  
+}Question4();
 
 //Q7
 
+function Question5(){
 let mf = ['mansaf', 'maqluba', 'Mandi']
 
 for(let y = 0; y <= 5; y = y + 1)
@@ -79,6 +88,7 @@ for(let y = 0; y <= 5; y = y + 1)
   }
 }
 alert('my fav. meals are mansaf, maqluba, Mandi.')
+} Question5();
 
 //now we can not be friends anymore because food is so important to me with crying emoji.
 alert('your score is = ' + score)
